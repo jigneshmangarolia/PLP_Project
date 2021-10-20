@@ -1,0 +1,18 @@
+get x
+print x
+if x < x
+  get y 
+  get x
+end
+
+while <= -x
+  sum x, -1 -> x
+  print "Hello"
+  print x
+end
+
+do
+  sum x, -1 -> x
+  print x
+while <= x
+end
