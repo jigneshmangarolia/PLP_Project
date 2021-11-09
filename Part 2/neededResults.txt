@@ -1,0 +1,9 @@
+get x
+print x
+if x < x
+  get y 
+  get x
+do
+  x = x + x
+while (x < 5)
+end
