@@ -1,5 +1,5 @@
 import sys
-import lexer
+import newLexer
 
 def parseError(msg):
     print("Parse Error: " + msg + " at line " + str(lexer.line))
@@ -22,7 +22,7 @@ def parseVal():
 
 def parseValList():
     if parseVal():
-        if nextToken[0] == lexer.LEXEME and nextToken[1] == ",":
+        if nextToken[0] == lexer.LEXEME and nextToken[1] == " ":
             lex()
             return parseValList()
         else:
